@@ -22,9 +22,6 @@ interface Props {
 
 const { data, error } = await supabase.from("anime").select();
 
-if (!error) console.log(data);
-if (error) console.log(error);
-
 const { title, href } = Astro.props;
 ---
 
